@@ -7,6 +7,9 @@ authors = ["Artem Osipov <tema.osipov@mail.ru>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 Django = "^4.2.5"
+psycopg2-binary = "^2.9.7"
+Pillow = "^10.0.1"
+ipython = "^8.15.0"
 
 [tool.poetry.dev-dependencies]
 

@@ -5,6 +5,7 @@ NULLABLE = {'blank': True, 'null': True}
 
 
 class Product(models.Model):
+
     name = models.CharField(max_length=100, verbose_name='название товара')
     describe = models.TextField(verbose_name='описание товара')
     preview = models.ImageField(upload_to='products/', verbose_name='изображение', **NULLABLE)
