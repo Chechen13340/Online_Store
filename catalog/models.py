@@ -26,6 +26,7 @@ class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name='название категории')
     describe = models.TextField(verbose_name='описание категории')
 
+
     def __str__(self):
         return f'{self.name} {self.describe}'
 
