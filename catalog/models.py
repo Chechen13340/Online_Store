@@ -8,7 +8,7 @@ class Product(models.Model):
 
     name = models.CharField(max_length=100, verbose_name='название товара')
     describe = models.TextField(verbose_name='описание товара')
-    preview = models.ImageField(upload_to='products/', verbose_name='изображение', **NULLABLE)
+    preview = models.ImageField(upload_to='media/', verbose_name='изображение', **NULLABLE)
     category = models.CharField(max_length=100)
     cost = models.IntegerField(verbose_name='стоимость товара', default=100)
     date_create = models.DateTimeField(verbose_name='дата создания', default=timezone.now)
